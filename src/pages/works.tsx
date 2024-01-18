@@ -21,7 +21,7 @@ export default function Works() {
             <p className="text-black mx-3 ">Architecture</p>
             <p className="text-black mx-3 ">In-house</p>
           </div>
-          <div className="cards-container grid grid-cols-2 gap-0 mt-20">
+          <div className="cards-container grid grid-cols-1 md:grid-cols-2 gap-0 mt-20">
             <div className="col-span-1 ">
               <Link className="works-cards" href="https://www.youtube.com/watch?v=ouyxO0IbIXI&t=11s" target="_blank">
                 <Image
