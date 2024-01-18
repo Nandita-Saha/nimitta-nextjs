@@ -4,10 +4,15 @@
 @layer components {
   .baseContainer {
     /*@apply mx-auto max-w-7xl */
-    @apply mx-auto max-w-screen-xl;
+    @apply mx-auto 2xl:max-w-screen-xl xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md max-w-full px-6 md:px-0 ;
   }
   .section-padding{
     padding: 80px 0;
+  }
+  @media(max-width:767px){
+    .section-padding{
+      padding: 35px 0;
+    }
   }
   h1,h2,h3,h4,h5,h6,p,span,a{
     color: #afafaf;
@@ -27,17 +32,28 @@
     color: #ff6422;
   }
  .banner-video{
+  padding-top: 65px;
 
  }
- .slick-arrow-prev {
-  left: 0; /* Customize left position */
-}
 
-.slick-arrow-next {
-  right: 0; /* Customize right position */
-}
+ .slick-arrow-prev, .slick-arrow-next{
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+ }
+ .slick-arrow-prev{
+  background-image: url("../../public/assets/prev-arrow.svg");
+ }
+ .slick-arrow-next{
+  background-image: url("../../public/assets/next-arrow.svg");
+ }
   .homepage-btn{
-    @apply text-3xl font-normal mt-12 block w-max mx-auto transition duration-150 px-5 py-2 rounded-lg;
+    @apply text-lg lg:text-3xl font-normal mt-12 block w-max mx-auto transition duration-150 px-5 py-2 rounded-lg;
   }
   .works-cards{
     @apply relative inline-block mx-auto mb-20 text-center bg-gray-950 rounded-3xl hover:cursor-pointer;

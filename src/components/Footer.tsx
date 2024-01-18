@@ -6,11 +6,11 @@ const opensans = Open_Sans({ subsets: ["latin"] });
 
 export default function Footer() {
   return (
-    <div className={`py-3 pt-24 ${opensans.className}`}>
+    <div className={`py-3 pt-8 lg:pt-24 ${opensans.className}`}>
       <div className="baseContainer">
         <ul className="flex items-center justify-center mb-4">
-          <li className="px-2 mr-4">
-            <Link className="w-4 h-4" href="https://www.linkedin.com/company/nimitta-fx">
+          <li className="px-2 lg:mr-4">
+            <Link className="w-3 h-3 lg:w-4 lg:h-4" href="https://www.linkedin.com/company/nimitta-fx">
               <Image
                 className="w-6 h-6"
                 src="/assets/footer/linkedin-icon.svg"
@@ -20,8 +20,8 @@ export default function Footer() {
               />
             </Link>
           </li>
-          <li className="px-2 mr-4">
-            <Link className="w-4 h-4" href="https://www.facebook.com/nimittaFX">
+          <li className="px-2 lg:mr-4">
+            <Link className="w-3 h-3 lg:w-4 lg:h-4" href="https://www.facebook.com/nimittaFX">
               <Image
                 className="w-6 h-6"
                 src="/assets/footer/facebook-icon.svg"
@@ -31,8 +31,8 @@ export default function Footer() {
               />
             </Link>
           </li>
-          <li className="px-2 mr-4">
-            <Link className="w-4 h-4" href="https://twitter.com/nimittaFX">
+          <li className="px-2 lg:mr-4">
+            <Link className="w-3 h-3 lg:w-4 lg:h-4" href="https://twitter.com/nimittaFX">
               <Image
                 className="w-6 h-6"
                 src="/assets/footer/twitter-icon.svg"
@@ -42,8 +42,8 @@ export default function Footer() {
               />
             </Link>
           </li>
-          <li className="px-2 mr-4">
-            <Link className="w-4 h-4" href="https://www.instagram.com/nimittafx">
+          <li className="px-2 lg:mr-4">
+            <Link className="w-3 h-3 lg:w-4 lg:h-4" href="https://www.instagram.com/nimittafx">
               <Image
                 className="w-6 h-6"
                 src="/assets/footer/instagram-icon.svg"
@@ -53,8 +53,8 @@ export default function Footer() {
               />
             </Link>
           </li>
-          <li className="px-2 mr-4">
-            <Link className="w-4 h-4" href="https://www.youtube.com/@NimittaFX/videos">
+          <li className="px-2 lg:mr-4">
+            <Link className="w-3 h-3 lg:w-4 lg:h-4" href="https://www.youtube.com/@NimittaFX/videos">
               <Image
                 className="w-6 h-6"
                 src="/assets/footer/youtube-icon.svg"
@@ -65,7 +65,7 @@ export default function Footer() {
             </Link>
           </li>
         </ul>
-        <p className="text-xs py-5 text-center mb-4">Copyright © 2024. nimitta.co, All rights reserved</p>
+        <p className="text-xs lg:py-5 text-center mb-4">Copyright © 2024. nimitta.co, All rights reserved</p>
       </div>
     </div>
   );
